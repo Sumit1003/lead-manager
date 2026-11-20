@@ -8,7 +8,7 @@ view them in a table, edit them, delete them (with confirmation), and
 search / filter by name or status. A small dashboard shows total leads per
 status.
 
-**Live demo:** _(link added after deployment — see below)_
+**Live demo:** https://lead-manager-tlg4.onrender.com (free Render instance — first load after idle time can take ~1 minute)
 
 ## Tech stack
 
@@ -112,5 +112,5 @@ lead-manager/
 ## Submission
 
 - Repo: https://github.com/Sumit1003/lead-manager
-- Live demo: _(added after deployment)_
+- Live demo: https://lead-manager-tlg4.onrender.com
 - Built by Sumit Kumar — React, Node.js, Express, MongoDB/SQLite, REST APIs.
