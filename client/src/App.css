@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #555;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+/* Banners */
+.banner {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.banner.error {
+  background: #fdecea;
+  color: #7a1f1a;
+  border: 1px solid #f5c6c2;
+}
+
+.banner.success {
+  background: #e6f4ea;
+  color: #1e5c2e;
+  border: 1px solid #b9dfc3;
+}
+
+/* Dashboard counts */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+
+.stat-card.total {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: #fff;
+}
+
+.stat-number {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.lead-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lead-form input,
+.lead-form select,
+.toolbar input,
+.toolbar select {
+  padding: 9px 10px;
+  font-size: 14px;
+  border: 1px solid #c9ced6;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 400;
+  width: 100%;
+}
+
+.lead-form input:focus,
+.lead-form select:focus,
+.toolbar input:focus,
+.toolbar select:focus {
+  outline: 2px solid #1a73e8;
+  border-color: #1a73e8;
+}
+
+.field-error,
+.form-error {
+  color: #b3261e;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.form-error {
+  margin: 12px 0 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.btn {
+  padding: 9px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #c9ced6;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f0f2f5;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn.primary {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: #fff;
+}
+
+.btn.primary:hover:not(:disabled) {
+  background: #1765cc;
+}
+
+.btn.danger {
+  background: #b3261e;
+  border-color: #b3261e;
+  color: #fff;
+}
+
+.btn.danger:hover {
+  background: #8f1d17;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.toolbar .search {
+  flex: 1;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eceef1;
+  white-space: nowrap;
+}
+
+th {
+  color: #555;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+td.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.muted {
+  color: #666;
+}
+
+/* Status badges */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.badge.new {
+  background: #e8f0fe;
+  color: #174ea6;
+}
+
+.badge.contacted {
+  background: #fef7e0;
+  color: #7a4a00;
+}
+
+.badge.qualified {
+  background: #e6f4ea;
+  color: #1e5c2e;
+}
+
+.badge.lost {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+/* Delete confirmation */
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.confirm-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.confirm-box h3 {
+  margin: 0 0 8px;
+}
+
+.confirm-box p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+}
