@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+server/leads.db
+server/leads.db-wal
+server/leads.db-shm
+.DS_Store
