@@ -1,0 +1,13 @@
+# Render blueprint — deploys the whole app as one free web service.
+# The Express server (server/) builds the React app (client/) and serves it
+# on the same port in production, so a single service hosts everything.
+services:
+  - type: web
+    name: lead-manager
+    env: node
+    plan: free
+    buildCommand: cd client && npm install && npm run build && cd ../server && npm install
+    startCommand: cd server && NODE_ENV=production npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
